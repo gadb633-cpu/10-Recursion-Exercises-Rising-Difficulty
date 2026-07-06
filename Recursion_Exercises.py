@@ -82,7 +82,25 @@ def count_value(lst, value):
         return 1 + count_value(lst, value)
     else:
         return count_value(lst, value)
-print(count_value([1, 2, 2, 3, 2], 2))    
+print(count_value([1, 2, 2, 3, 2], 2))   
+
+# # 10. Fibonacci
+# def fibonacci(n,a,b):
+    
+#     # lst = list(range(n))
+#     # if n> len(lst):
+#     #     return
+#     # rounds=0
+#     if n==0:
+#         return 0
+#     a = b
+#     b = a+b
+#     return fibonacci(n-1,a,b)
+
+
+# print(fibonacci(10,0,1)) 
+
+    
 
 
     
