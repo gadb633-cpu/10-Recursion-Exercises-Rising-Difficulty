@@ -62,4 +62,18 @@ def reverse_string(text):
     return word+reverse_string(text[0:-1])
 print(reverse_string("python"))
 
+#8. Check Palindrome
+def is_palindrome(text):
+    x = text
+    if len(text)<=1:
+        return True
+    if text[0] == text[-1]:
+        return is_palindrome(text[1:-1])
+    else:
+        return False
+print(is_palindrome("level"))    
+
+    
+
+
 
