@@ -31,4 +31,14 @@ def count_items(lst):
     return num_len + count_items(lst)
 print(count_items(["a", "b", "c"])) 
 
+# 5. Count Even Numbers in a List
+def count_evens(numbers):
+    if numbers==[]:
+        return 0
+    num = numbers.pop(0)
+    if num%2==0:
+        return 1+ count_evens(numbers)
+    else:
+        return 0+count_evens(numbers)
+print(count_evens([4, 7, 10, 3, 8]))
 
