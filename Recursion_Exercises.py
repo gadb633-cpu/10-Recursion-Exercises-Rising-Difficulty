@@ -73,6 +73,18 @@ def is_palindrome(text):
         return False
 print(is_palindrome("level"))    
 
+# 9. Count How Many Times an Item Appears
+def count_value(lst, value):
+    if len(lst)==0:
+        return 0
+    count =lst.pop(0)
+    if count ==value:
+        return 1 + count_value(lst, value)
+    else:
+        return count_value(lst, value)
+print(count_value([1, 2, 2, 3, 2], 2))    
+
+
     
 
 
